@@ -15,9 +15,7 @@ Digging through the HTML Document we find a script tag linking /js/index.js
 
 Upon primitive inspection it's an ajax function which returns success and possibly flag or  failure based on request to url '/check_from_google'.
 
-Inferring from the challenge title and from the url name '/check_from_google' we have to set the HTTP 
-
-[Referer](https://en.wikipedia.org/wiki/HTTP_referer) field in request header to url '/check_from_google'.
+Inferring from the challenge title and from the url name '/check_from_google' we have to set the HTTP [Referer](https://en.wikipedia.org/wiki/HTTP_referer) field in request header to url '/check_from_google'.
 
 Fire up burp suite, capture the request and add a referer field with 'www.google.com' as the value. 
 
