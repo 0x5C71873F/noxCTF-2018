@@ -13,7 +13,7 @@
 The Decryptor service is programmed to decrypt any ciphertext except the one we have . So we have to represent the ciphertext in some other way such that it decrypts to a plaintext which is related to the original plaintext. In Cryptography, this property of a cipher is known as Malleability . RSA with a proper padding is not malleable while the naked RSA used here is.
 
 
-## The Math:
+## The Math
 
 The RSA Encryption is given by 
 
@@ -37,5 +37,6 @@ Now that we know what to do, we can write a simple python script decryptor.py wh
 
 Aaaaaand we get the flag.
 
-## Flag :  
+## Flag
+
 `noxCTF{0u7sm4r73d}`
