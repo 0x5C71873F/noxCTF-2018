@@ -29,7 +29,7 @@ where,
 
 ![N](https://latex.codecogs.com/gif.latex?N) is modulus
 
-Suppose we take a random integer S , We multiply S^e mod N on both sides
+Suppose we take a random integer ![S](https://latex.codecogs.com/gif.latex?S) , We multiply ![SN](https://latex.codecogs.com/gif.latex?S%5E%7Be%7D%5C%2Cmod%5C%2CN) on both sides
 
 c * (S^e mod N) = (m^e mod N) * (S^e mod N)
 
