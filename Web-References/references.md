@@ -9,7 +9,7 @@ When we visit the address, We get this nice "welcoming" page.
 
 ![img1](https://raw.githubusercontent.com/0x5C71873F/noxCTF-2018/master/Web-References/img1.png)
 
-Digging through the HTML Document we find a script tag linking /js/index.js 
+Digging through the HTML Document we find a script tag linking `/js/index.js` 
 
 ![img2](https://raw.githubusercontent.com/0x5C71873F/noxCTF-2018/master/Web-References/img2.png)
 
