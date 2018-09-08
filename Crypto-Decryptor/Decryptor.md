@@ -35,6 +35,7 @@ Decrypting the LHS part of the equation with decryptor gives us ![eq3](https://l
 
 Now that we know what to do, we can write a simple python script [decryptor.py](https://github.com/0x5C71873F/noxCTF-2018/blob/master/Crypto-Decryptor/decryptor.py) which can do all the above.
 
+We run the script,  
 Aaaaaand we get the flag.
 
 ## Flag
