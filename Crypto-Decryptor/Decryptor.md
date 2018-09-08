@@ -1,0 +1,44 @@
+Challenge Name : Decryptor
+>
+>I created this nice decryptor for RSA ciphertexts, you should try it out!
+>
+>nc chal.noxale.com 4242
+>
+>Oh, and someone told me to give this to you: 
+>N = 140165355674296399459239442258630641339281917770736077969396713192714338090714726890918178888723629353043167144351074222216025145349467583141291274172356560132771690830020353668100494447956043734613525952945037667879068512918232837185005693504551982611886445611514773529698595162274883360353962852882911457919 
+>c = 86445915530920147553767348020686132564453377048106098831426077547738998373682256014690928256854752252580894971618956714013602556152722531577337080534714463052378206442086672725486411296963581166836329721403101091377505869510101752378162287172126836920825099014089297075416142603776647872962582390687281063434 
+>e = 65537
+
+
+The Decryptor service is programmed to decrypt any ciphertext except the one we have . So we have to represent the ciphertext in some other way such that it decrypts to a plaintext which is related to the original plaintext. In Cryptography, this property of a cipher is known as Malleability . RSA with a proper padding is not malleable while the naked RSA used here is.
+
+
+The Math:
+
+The RSA Encryption is given by 
+
+c = m^e mod N
+
+where,
+
+	c is ciphertext
+
+	m is plaintext
+
+	e is public exponent
+
+	N is modulus
+
+Suppose we take a random integer S , We multiply S^e mod N on both sides
+
+c * (S^e mod N) = (m^e mod N) * (S^e mod N)
+
+c * (S^e mod N) = (m*S)^e mod N
+
+Decrypting the LHS part of the equation with decryptor gives us (m*S) , using which m is trivial to get.
+
+Now that we know what to do, we can write a simple python script decryptor.py which can do all the above.
+
+Aaaaaand we get the flag.
+
+flag : `noxCTF{0u7sm4r73d}`
