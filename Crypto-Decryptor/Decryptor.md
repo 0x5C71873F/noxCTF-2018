@@ -13,7 +13,7 @@
 The Decryptor service is programmed to decrypt any ciphertext except the one we have . So we have to represent the ciphertext in some other way such that it decrypts to a plaintext which is related to the original plaintext. In Cryptography, this property of a cipher is known as Malleability . RSA with a proper padding is not malleable while the naked RSA used here is.
 
 
-## The Math:
+## The Math
 
 The RSA Encryption is given by 
 
@@ -27,14 +27,16 @@ where,
 
 Suppose we take a random integer ![S](https://latex.codecogs.com/gif.latex?S) , We multiply ![SN](https://latex.codecogs.com/gif.latex?S%5E%7Be%7D%5C%2Cmod%5C%2CN) on both sides
 
-c * (S^e mod N) = (m^e mod N) * (S^e mod N)
+![eq1](https://latex.codecogs.com/gif.latex?c%5Ccdot%20%5Cleft%20%28%20S%5E%7Be%7D%5C%2Cmod%5C%2CN%20%5Cright%20%29%3D%5Cleft%20%28%20m%5E%7Be%7D%5C%2Cmod%5C%2CN%20%5Cright%20%29%5Ccdot%20%5Cleft%20%28%20S%5E%7Be%7D%5C%2Cmod%5C%2CN%20%5Cright%20%29)
 
-c * (S^e mod N) = (m*S)^e mod N
+![eq2](https://latex.codecogs.com/gif.latex?c%5Ccdot%20%5Cleft%20%28%20S%5E%7Be%7D%5C%2Cmod%5C%2CN%20%5Cright%20%29%3D%5Cleft%20%28%20m%5Ccdot%20S%20%5Cright%20%29%5E%7Be%7D%5C%2Cmod%5C%2CN)
 
-Decrypting the LHS part of the equation with decryptor gives us (m*S) , using which m is trivial to get.
+Decrypting the LHS part of the equation with decryptor gives us ![eq3](https://latex.codecogs.com/gif.latex?%5Cleft%20%28%20m%5Ccdot%20S%20%5Cright%20%29) , using which ![m](https://latex.codecogs.com/gif.latex?m) is trivial to get.
 
 Now that we know what to do, we can write a simple python script decryptor.py which can do all the above.
 
 Aaaaaand we get the flag.
 
-flag : `noxCTF{0u7sm4r73d}`
+## Flag
+
+`noxCTF{0u7sm4r73d}`
