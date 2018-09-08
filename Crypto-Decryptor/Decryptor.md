@@ -33,7 +33,7 @@ Suppose we take a random integer ![S](https://latex.codecogs.com/gif.latex?S) , 
 
 Decrypting the LHS part of the equation with decryptor gives us ![eq3](https://latex.codecogs.com/gif.latex?%5Cleft%20%28%20m%5Ccdot%20S%20%5Cright%20%29) , using which ![m](https://latex.codecogs.com/gif.latex?m) is trivial to get.
 
-Now that we know what to do, we can write a simple python script decryptor.py which can do all the above.
+Now that we know what to do, we can write a simple python script [decryptor.py](https://github.com/0x5C71873F/noxCTF-2018/blob/master/Crypto-Decryptor/decryptor.py) which can do all the above.
 
 Aaaaaand we get the flag.
 
