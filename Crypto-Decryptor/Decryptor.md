@@ -10,7 +10,7 @@
 >e = 65537
 
 
-The Decryptor service is programmed to decrypt any ciphertext except the one we have . So we have to represent the ciphertext in some other way such that it decrypts to a plaintext which is related to the original plaintext. In Cryptography, this property of a cipher is known as Malleability . RSA with a proper padding is not malleable while the naked RSA used here is.
+The Decryptor service is programmed to decrypt any ciphertext except the one we have . So we have to represent the ciphertext in some other way such that it decrypts to a plaintext which is related to the original plaintext. In Cryptography, this property of a cipher is known as [Malleability](https://en.wikipedia.org/wiki/Malleability_%28cryptography%29) . RSA with a proper padding is not malleable while the naked RSA used here is.
 
 
 ## The Math
