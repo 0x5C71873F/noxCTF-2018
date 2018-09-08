@@ -21,13 +21,13 @@ The RSA Encryption is given by
 
 where,
 
-c is ciphertext
+![c](https://latex.codecogs.com/gif.latex?c) is ciphertext
 
-m is plaintext
+![m](https://latex.codecogs.com/gif.latex?m) is plaintext
 
-e is public exponent
+![e](https://latex.codecogs.com/gif.latex?e) is public exponent
 
-N is modulus
+![N](https://latex.codecogs.com/gif.latex?N) is modulus
 
 Suppose we take a random integer S , We multiply S^e mod N on both sides
 
