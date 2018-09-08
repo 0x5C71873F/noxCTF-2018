@@ -1,4 +1,4 @@
-#Challenge Name : Decryptor
+# Challenge Name : Decryptor
 >
 >I created this nice decryptor for RSA ciphertexts, you should try it out!
 >
@@ -17,7 +17,7 @@ The Math:
 
 The RSA Encryption is given by 
 
-![e1](https://latex.codecogs.com/gif.latex?c&space;=&space;m^{e}\,mod\,N)
+![e1](https://latex.codecogs.com/gif.latex?c%3Dm%5E%7Be%7D%5C%2Cmod%5C%2CN)
 
 where,
 
