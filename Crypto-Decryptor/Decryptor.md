@@ -13,20 +13,16 @@
 The Decryptor service is programmed to decrypt any ciphertext except the one we have . So we have to represent the ciphertext in some other way such that it decrypts to a plaintext which is related to the original plaintext. In Cryptography, this property of a cipher is known as Malleability . RSA with a proper padding is not malleable while the naked RSA used here is.
 
 
-The Math:
+## The Math:
 
 The RSA Encryption is given by 
 
 ![e1](https://latex.codecogs.com/gif.latex?c%3Dm%5E%7Be%7D%5C%2Cmod%5C%2CN)
 
-where,
-
-![c](https://latex.codecogs.com/gif.latex?c) is ciphertext
-
-![m](https://latex.codecogs.com/gif.latex?m) is plaintext
-
-![e](https://latex.codecogs.com/gif.latex?e) is public exponent
-
+where,  
+![c](https://latex.codecogs.com/gif.latex?c) is ciphertext  
+![m](https://latex.codecogs.com/gif.latex?m) is plaintext  
+![e](https://latex.codecogs.com/gif.latex?e) is public exponent  
 ![N](https://latex.codecogs.com/gif.latex?N) is modulus
 
 Suppose we take a random integer ![S](https://latex.codecogs.com/gif.latex?S) , We multiply ![SN](https://latex.codecogs.com/gif.latex?S%5E%7Be%7D%5C%2Cmod%5C%2CN) on both sides
