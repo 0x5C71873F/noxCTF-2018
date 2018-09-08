@@ -23,4 +23,5 @@ Fire up burp suite, capture the request and add a referer field with 'www.google
 
 We get a base64 string as response. Decoding it, gives us the flag.
 
-The flag is : noxCTF{G0ogL3_1s_4lW4Ys_Ur_b3ST_R3f3r3nc3}
+The flag is : 
+`noxCTF{G0ogL3_1s_4lW4Ys_Ur_b3ST_R3f3r3nc3}`
