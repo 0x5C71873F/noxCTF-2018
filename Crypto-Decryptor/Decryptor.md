@@ -1,4 +1,4 @@
-Challenge Name : Decryptor
+#Challenge Name : Decryptor
 >
 >I created this nice decryptor for RSA ciphertexts, you should try it out!
 >
@@ -17,17 +17,17 @@ The Math:
 
 The RSA Encryption is given by 
 
-c = m^e mod N
+![e1](https://latex.codecogs.com/gif.latex?c&space;=&space;m^{e}\,mod\,N)
 
 where,
 
-	c is ciphertext
+c is ciphertext
 
-	m is plaintext
+m is plaintext
 
-	e is public exponent
+e is public exponent
 
-	N is modulus
+N is modulus
 
 Suppose we take a random integer S , We multiply S^e mod N on both sides
 
